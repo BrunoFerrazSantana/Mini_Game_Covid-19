@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Título da aba da página-->
+		<title>Derrote o Covid-19</title>
+		<!--Tag que permite o uso de caracteres especiais-->
+		<meta charset="utf-8">
+		<!--Bootstrap-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+		<!--Estilo CSS-->
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<!--Normalize CSS-->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<!--JavaScript-->
+		<script src="js/jogo.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row"><!--Início do texto de derrota-->
+				<div class="col">
+					<div class="d-flex justify-content-center mt-5 text-danger">
+						<h1>DERROTA!!!</h1>
+					</div>
+				</div>
+			</div><!--Fim do texto de derrota-->
+			<div class="row"><!--Início da imagem de game over-->
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<img src="imagens/game_over.png">
+					</div>
+				</div>
+			</div><!--Fim da imagem de game over-->
+			<div class="row"><!--Início do botões restart e home-->
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<button type="button" class="btn btn-danger btn-lg mt-5 mr-5" onclick="window.location.href = 'jogo.html'">Tentar novamente</button>
+						<button type="button" class="btn btn-danger btn-lg mt-5" onclick="window.location.href = 'index.html'">Voltar ao lobby</button>
+					</div>
+				</div>
+			</div><!--Fim do botões restart e home-->
+		</div>
+	</body>
+</html>

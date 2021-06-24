@@ -1,0 +1,33 @@
+<!Doctype html>
+<html>
+	<head>
+		<!--Título da aba da página-->
+		<title>Derrote o Covid-19</title>
+		<!--Tag que permite o uso de caracteres especiais-->
+		<meta charset="utf-8">
+		<!--Estilo CSS-->
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<!--Normalize CSS-->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<!--JavaScript-->
+		<script src="js/jogo.js"></script>
+	</head>
+	<body onresize="ajustaTamanhoPalcoJogo()">
+		<div class="painel">
+			<div class="vidas">
+				<img id="v1" src="imagens/coracao_cheio.png">
+				<img id="v2" src="imagens/coracao_cheio.png">
+				<img id="v3" src="imagens/coracao_cheio.png">
+			</div>
+			<div class="cronometro">
+				Tempo restante: <span id="cronometro"></span>
+			</div>
+		</div>
+		<script >
+			document.getElementById('cronometro').innerHTML = tempo
+			 var criaCorona = setInterval(function(){
+				posicaoRandomica()
+			}, 2000)
+		</script>
+	</body>
+</html>
